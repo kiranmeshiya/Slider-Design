@@ -1,0 +1,105 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.slide .item
+{
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+.item .img1
+{
+	width: 100%;
+	height: 100%;
+}
+.nev
+{
+	display: flex;
+	justify-content: space-between;
+	background: transparent;
+	align-items: center;
+}
+.nev ._btn_left 
+{
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border:none;
+    text-align: center;
+    position: absolute;
+    left:30px;
+    top:30%;
+    background-color: transparent!important;
+    color: white !important;
+    transition: .4s;
+    font-size: 40px;
+    font-family:'Times New Roman';
+    font-weight: bolder;
+}
+.nev ._btn_left:active , .nev ._btn_right:active 
+{
+
+	scale: 1.2;
+	color: teal !important;;
+}
+
+.nev ._btn_right 
+{
+	z-index: 2;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border:none;
+    text-align: center;
+    position: absolute;
+    top:30%;
+    right:30px;
+    background-color: transparent!important;
+    color: white !important;
+    transition: .4s;
+    font-size: 40px;
+    font-family:'Times New Roman';
+    font-weight: bolder;
+}
+.item .number
+{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    padding: 8px 12px;
+    background-color:transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.item .text
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 8px 12px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 400;
+    font-size: 20px;
+}
+
+
+.fade
+{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade
+{
+
+    from{ transform: rotateX(90deg);}
+    to{  transform: rotateX(0deg);}
+
+}

@@ -1,0 +1,124 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+    margin-top: 50px;
+}
+.container
+{
+    max-width: 1200px;
+    margin: auto;
+}
+.slide
+{
+	width: 100%;
+	height: 450px;
+	position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.slide .img2
+{
+	width: 100%;
+	height: 100%;
+}
+.nev
+{
+	display: flex;
+	justify-content: space-between;
+	background: transparent;
+	align-items: center;
+
+}
+.nev #_btn_left 
+{
+    z-index: 2;
+    border:none;
+    text-align: center;
+    position: absolute;
+    left:0px;
+    background-color: transparent!important;
+    color: white !important;
+    font-family:'Times New Roman';
+    cursor: pointer;
+    top: 45%;
+    width: auto;
+    margin-top: -22px;
+    padding: 13px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+
+}
+.nev #_btn_left:hover , .nev #_btn_right:hover 
+{
+
+    background-color: rgba(0, 0, 0, 0.8)!important;
+}
+
+.nev #_btn_right 
+{
+	z-index: 2;
+    border:none;
+    text-align: center;
+    position: absolute;
+    right:0px;
+    background-color: transparent!important;
+    color: white !important;
+    font-family:'Times New Roman';
+    cursor: pointer;
+    top:45%;
+    width: auto;
+    margin-top: -22px;
+    padding: 13px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 20px;
+/*  top:20px;*/
+}
+
+
+/*  Animation  */
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {filter: blur(10px);}
+  to {filter: blur(0);}
+}
+
+
+/*.fade
+{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade
+{
+
+    from{ transform: rotateX(90deg);}
+    to{  transform: rotateX(0deg);}
+
+}*/

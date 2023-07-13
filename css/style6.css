@@ -1,0 +1,240 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+   background-color: #0b69ed;
+    margin-top: 40px;
+}
+.container
+{
+    max-width: 1250px;
+    margin: auto;
+}
+._head
+{
+    display: inline-flex;
+    justify-items: center!important;
+    align-items: center!important;
+
+}
+.slider_head
+{
+    color:white;
+    font-size: 33px;
+    font-family:roboto;
+    font-weight: bolder;
+    text-align: center;
+    position:relative;
+    letter-spacing: 1px;
+    padding: 0px 15px ;
+}
+.slider_head1
+{
+    height: 4px;
+    width:380px;
+    background-color: white;
+   /* position: absolute;
+    top:520px;
+    left:60px;*/
+    
+}
+.slider_head2
+{
+    height: 4px;
+    width:380px;
+    background-color: white;
+   /* position: absolute;
+    top:520px;
+    right:60px;*/
+}
+
+.slide
+{
+/*    width: 33.33%;*/
+    position: relative;
+    margin: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr)!important;
+/*    column-gap: 20px;*/
+    margin-top: 60px;
+/*    margin-left:20px;*/
+margin-left: 10px;
+}
+.item,.d_active
+{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+    background-color: white;
+    width:380px;
+    height: 300px;
+    text-align: center;
+    transform: scale(0.6);
+    transition: .4s;
+    position: relative;
+    opacity: 0.8;
+}
+.item1
+{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+    background-color: white;
+    width:450px;
+    height: 290px;
+    text-align: center;
+    transform: scale(0.8);
+    transition: .4s;
+    position: relative;
+    opacity: 1;
+}
+.item .face, .item1 .face
+{
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background-color: transparent;
+    position: absolute;
+    top:-60px;
+}
+
+.item .img6, .item1 .img6
+{
+    width:80px;
+    height:80px;
+    border-radius: 50%!important;
+    border: 3px solid whitesmoke;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+.name 
+{
+  /*  position: absolute;
+    top:60px;
+    left:40%;*/
+    text-align: center;
+    padding: 50px 0 10px 0;
+}
+.name a
+{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: roboto;
+    font-weight:900!important;
+    color: blue;
+}
+.quote
+{
+   /* position: absolute;
+    top:90px;
+    left:20px;*/
+    text-align: center;
+
+}
+.quote p
+{
+    text-align: center;
+    font-size: 22px;
+    font-family: roboto;
+}
+.icon i
+{
+    color:#0a69ed;
+    margin: 0 10px;
+    font-size: 18px;
+
+}
+.icon
+{
+    /*position: absolute;
+    bottom: 20px;
+    right:30%;*/
+    text-align: center;
+    padding: 20px 0 0px 0;
+}
+
+.nev
+{
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    align-items: center;
+
+}
+.nev #_btn_left 
+{
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color:#0a69ed;
+    border-radius: 50%;
+    text-align: center!important;
+    position: absolute;
+    font-size: 20px;
+    left:30px;
+    top: 40%;
+    background-color: #fff;
+    font-family:'Times New Roman';
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s ease;
+    border: none;
+}
+.nev #_btn_left:hover , .nev #_btn_right:hover 
+{
+
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+
+.nev #_btn_right 
+{
+     z-index: 2;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color:#0a69ed;
+    border-radius: 50%;
+    text-align: center!important;
+    position: absolute;
+    font-size: 20px;
+    right:30px;
+    top: 40%;
+    background-color: #fff;
+    font-family:'Times New Roman';
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s ease;
+    border: none;
+}
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #transparent;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 20px;
+/*  top:20px;*/
+}
+
+.dot:hover, .i_active 
+{
+    background-color: white;
+    border: 1px solid white;
+
+    
+}
+.active
+{
+    transform: scale(0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    z-index: 1;
+}
